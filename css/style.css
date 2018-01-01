@@ -1,0 +1,25 @@
+body{
+    background: #607D8B;
+}
+.container {
+    text-align: center;
+    margin-top: 10vh;
+}
+#time {
+    font-family: 'Anonymous Pro' , monospace;
+    font-size: 10vw;
+    color: white;
+    text-transform: capitalize;
+}
+.timestamps{
+    background: white;
+    margin-top: 20px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 2vh;
+    border-radius: 10px;
+}
+.timestamps li{
+    font-family: 'Raleway' , sans-serif;
+    list-style: none;
+}
