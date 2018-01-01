@@ -1,4 +1,3 @@
-
 <script>
     $(document).ready(function(){
         stampNum = localStorage.getItem("storage");
