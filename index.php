@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <head>
     <title>Clockur</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway|Anonymous+Pro|Ubuntu+Mono" rel="stylesheet">
 
 </head>
@@ -32,6 +32,7 @@
     $(document).ready(function() {
         var stampNum = 1;
         localStorage.setItem("storage",stampNum);
+        
 
         setInterval(function(){
             $('#time').load("time.php");
@@ -39,6 +40,14 @@
 
         $('#start').on("click", function() {
             $('#' + stampNum).load("timestamp.php");
+            var projectName = $("#projectName").val();
+            localStorage.setItem("projectName", projectName);
+        });
+
+        $('#stop').on("click", function() {
+            $('#' + stampNum).load("stop.php");
+            var projectName = $("#projectName").val();
+            localStorage.setItem("projectName", projectName);
         });
 
         $('#button-group').on('submit', function(e){
